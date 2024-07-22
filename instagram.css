@@ -1,0 +1,367 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;  
+    font-family: sans-serif;
+}
+.main_body
+{
+    display: flex;
+}
+
+/* left box */
+.left_box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column;
+    position:fixed;
+    top: -1px;
+    border-right:1px solid rgb(177, 174, 174) ;
+ 
+    width: 17%;
+    height: 100vh;    
+}
+
+.main_name
+{
+    width: 140px;
+    padding-left: 25px;
+    border: none;
+    
+}
+
+
+ul li 
+{
+    list-style: none;
+}
+
+.profilepic
+{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: -3px;
+    border: none;
+
+}
+.fa
+{
+    font-size: 25px;
+    text-align: start;
+}
+/* .fa-house{padding-bottom: ;} */
+.more
+{
+    padding-left: 35px;
+}
+.Home
+{
+    padding-left:17px;
+    padding-top: 5px;
+}
+.Search{padding-left: 20px;}
+.Explore{padding-left: 20px;}
+.Reels{padding-left: 17px;}
+.Message{padding-left: 20px;}
+.Notification{padding-left: 20px;}
+.Create{padding-left: 23px;}
+.Profile{padding-left: 18px;}
+.more_text{padding-left: 20px;}
+
+
+.fa:hover,.profilepic:hover
+{
+    scale: 1.1;
+}
+ul li:hover
+{
+    background-color: whitesmoke;
+    width: 90%;
+    /* padding-left: 5%; */
+    /* padding-top: 10px; */
+    border-radius: 10px;
+    align-items: center;
+    
+}
+.more:hover
+{
+    background-color: whitesmoke;
+    width: 90%;
+    /* padding-left: 5%; */
+    /* padding-top: 10px; */
+    border-radius: 10px;
+    /* align-items: center; */
+}
+.offcanvas-start
+{
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 200px;
+}
+.offcanvasScrolling
+{
+    width: 5%;
+}
+/* middle box */
+
+/* story */
+.middle_box
+{
+    width: 55%;
+    /* border: 2px solid black; */
+    height: 100vh;
+    margin-left: 17%
+}
+.story
+{
+    width:78%;
+    height: 105px;
+    /* border: 1px solid black; */
+    
+    margin-top: 3.75%;
+    margin-left: 15%;
+    overflow-x:scroll;
+    background-color:rgb(254, 254, 253);
+}   
+ .story::-webkit-scrollbar{
+    display: none;
+ } 
+.stories 
+{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    
+  
+}
+.stories div
+{
+    width: 75px;
+}
+.story_dp
+{
+    width: 65px;
+    height: 65px;
+    object-fit:contain;
+    border-radius: 50%;
+    border: 2px solid rgb(237, 88, 88);
+    padding: 1px;
+}
+p{
+    font-family: sans-serif;
+}
+.storyname
+
+{   width: 100%;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+ 
+    text-align: center;
+   
+}
+
+
+/* feeds */
+.feeds
+{
+    width: 100%;
+    margin-left: 5%;
+    
+}
+.post_head
+{
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black ; */
+    width: 55%;
+    margin-left: 20%;
+    padding-left: 15px;
+    padding-right: 20px;
+    align-items:center;
+    margin-top: 20px;
+    
+   
+}
+.feed_profile_pic
+{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 7px;
+    border-radius: 50%;
+    object-fit: contain;
+    
+}
+
+.feed_post
+{
+    text-align: center;
+width:55%;
+height: 65vh;
+margin-left: 20%;
+border-radius: 5px;
+object-fit: cover;
+}
+
+.interactions
+{
+    width: 55%;
+    font-size: 25px;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.bottom_of_feed
+{
+    width: 55%;
+    
+    margin-left: 20%;
+}
+video
+{
+    width: 55%;
+    margin-left: 20%;
+    height: 70vh;
+    border-radius: 5px;
+    object-fit: contain;
+}
+
+.fa-heart:hover,.fa-comment:hover,.fa-bookmark:hover,.fa-paper-plane:hover
+{opacity: 0.4;}
+
+
+
+
+/* right box */
+
+
+.right_box
+{
+    width:28%;
+    /* border: 2px solid black; */
+    height: 100%;
+    background-color: rgb(253, 254, 254);
+    margin-top: 30px;
+    padding-right: 80px;
+    height: 130%;
+    
+}
+.right_pic
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid rgb(158, 251, 20);
+    padding: 1px;
+    object-fit: cover;
+    
+}
+.right1
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.right_pic2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* border: 2px solid rgb(158, 251, 20);
+    padding: 1px; */
+}
+
+
+
+
+/* media query */
+
+@media  (max-width:1150px)
+{
+    .right_box{
+        display:none;
+        
+    }
+    .story
+    {
+        width: 120%;
+    }
+    .feeds
+    {
+        width: 200%;
+        margin-left: -18%;
+    }
+}
+
+@media (max-width:800px)
+{
+    .right_box{
+        display:none;
+        
+    }
+    .left_box{
+        border: none;
+    }
+    .story
+    {
+        width: 90%;
+        margin-left: 30%;
+    }
+    .feeds
+    {
+        width: 180%;
+        margin-left:1%;
+    }
+    body
+    {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (max-width:440px)
+{
+    .right_box{
+        display:none;
+        width: 0;
+        
+    }
+    .story
+    {
+        width: 320%;
+        margin-left: -20%;
+
+    }
+    .more_text,.Search,.Home,.Explore,.Reels,.Message,.Notification,.Create,.Profile
+    {
+        display: none;
+    
+    }
+    .left
+    {
+        align-items: center;
+        padding-left: 5%;
+        position: sticky;
+        top: 100;
+    }
+    .main_name
+    {
+        display: none;
+    }
+    .feeds
+    {
+        width: 400%;
+        margin-left: -45%;
+        margin-top: -10%;
+    }
+    body{
+        scroll-behavior: smooth;
+    }
+}
